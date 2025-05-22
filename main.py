@@ -1,9 +1,11 @@
 from os import getenv
 
 from selenium import webdriver
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
-from selenium.webdriver.edge.service import Service as EdgeService
-from selenium.webdriver.edge.options import Options
+
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
@@ -11,8 +13,10 @@ from selenium.webdriver.support import expected_conditions
 
 options = Options()
 options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
 driver = webdriver.Edge(
-    options=options, service=EdgeService(EdgeChromiumDriverManager().install())
+    options=options, service=ChromeService(ChromeDriverManager().install())
 )
 driver.get("https://suap.ifpi.edu.br/accounts/login/?next=/")
 
