@@ -4,7 +4,7 @@
 
 **`Sistema para reservas automáticas de refeições`**  
 
-> Esse sistema efetua reservas diárias de refeições no restaurante universitário do [IFPI - Campus Parnaíba](https://www.ifpi.edu.br/parnaiba)  
+> Esse projeto efetua reservas diárias de refeições no restaurante universitário do [IFPI - Campus Parnaíba](https://www.ifpi.edu.br/parnaiba)  
 por meio do [SUAP](https://suap.ifpi.edu.br/accounts/login/?next=/) (Sistema Unificado de Administração Pública) da instituição.  
 
 ## Ferramentas
