@@ -1,11 +1,11 @@
-name: Agender refeições no SUAP
+name: Agendar refeições no SUAP
 on:
   schedule:
     - cron: '0 4 * * *' 
   workflow_dispatch: 
 
 jobs:
-  book_meals_script:
+  suap_meals_script:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
@@ -26,4 +26,4 @@ jobs:
           SUAP_USERNAME: ${{ secrets.SUAP_USERNAME }}
           SUAP_PASSWORD: ${{ secrets.SUAP_PASSWORD }}
         run: |
-          python main.py
+          python suap_meals/main.py
