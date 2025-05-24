@@ -18,14 +18,14 @@ por meio do [SUAP](https://suap.ifpi.edu.br/accounts/login/?next=/) (Sistema Uni
 
 >📝 **Nota**: no momento o script efetua apenas a reserva do almoço. 
 
-## 1. Fork do repositório
+### 1. Fork do repositório
 
 **`Uma cópia independente do repositório será criada na sua conta do github`**  
 
 * Vá no canto superior direito desse repositório e click no botão "Fork";
 * Na tela seguinte confirme a criação do fork.
 
-## 2. Configuração de credenciais do SUAP
+### 2. Configuração de credenciais do SUAP
 
 **`O repositório/script terá acesso a sua matrícula e senha do SUAP`**  
 **`de forma segura e confidencial por meio do GitHub Secrets.`**
@@ -37,7 +37,7 @@ por meio do [SUAP](https://suap.ifpi.edu.br/accounts/login/?next=/) (Sistema Uni
     * **Name***: SUAP_USERNAME | **Secret***: *sua_matricula*
     * **Name***: SUAP_PASSWORD | **Secret***: *sua_senha*
 
-## 3. Pronto!🎉🥳
+### 3. Pronto!🎉🥳
 
 **`O próprio GitHub ficará responsável por executar o código diariamente`**  
 **`e garantir a reserva automática de sua refeição do dia seguinte.`**  
