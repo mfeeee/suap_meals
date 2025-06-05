@@ -11,12 +11,12 @@ class SuapLoginPage:
         self.submit_button = "//input[@type='submit' and @value='Acessar']"
 
     def login(self, username, password):
-        self.driver.get(self.url)
+        self.web_driver.get(self.url)
 
         username_field = wait_for_element(self.driver, By.NAME, "username")
         password_field = wait_for_element(self.driver, By.NAME, "password")
         submit_button = wait_for_element(
-            self.driver, By.XPATH, "//input[@type='submit' and @value='Acessar']"
+            self.web_driver, By.XPATH, "//input[@type='submit' and @value='Acessar']"
         )
 
         username_field.send_keys(username)

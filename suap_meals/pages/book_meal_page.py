@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from utils import wait_for_element
+from suap_meals.utils import wait_for_element
 
 
 class SuapBookMealPage:
