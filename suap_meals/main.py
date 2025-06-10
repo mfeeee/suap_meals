@@ -1,6 +1,6 @@
 from os import getenv
-from utils import WebDriverSetup
-from pages import SuapLoginPage, SuapBookMealPage
+from .utils import WebDriverSetup
+from .pages import SuapLoginPage, SuapBookMealPage
 
 
 def suap_book_meal():

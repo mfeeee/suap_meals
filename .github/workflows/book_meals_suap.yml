@@ -26,4 +26,4 @@ jobs:
           SUAP_USERNAME: ${{ secrets.SUAP_USERNAME }}
           SUAP_PASSWORD: ${{ secrets.SUAP_PASSWORD }}
         run: |
-          python suap_meals/main.py
+          python -m suap_meals.main
