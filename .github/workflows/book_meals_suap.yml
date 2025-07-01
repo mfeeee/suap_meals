@@ -1,7 +1,7 @@
 name: Agendar refeições no SUAP
 on:
   schedule:
-    - cron: '30 0 * * 0-4' 
+    - cron: ${{ secrets.CRONOMETER }} 
   workflow_dispatch: 
 
 jobs:
