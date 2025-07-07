@@ -1,7 +1,7 @@
 name: Agendar refeições no SUAP
 on:
   schedule:
-    - cron: '30 21 * * 0-4' 
+    - cron: '00 04 * * 1-5' #Automação irá rodar às 01h00 devido à inconsistências do SUAP
   workflow_dispatch: 
 
 jobs:
